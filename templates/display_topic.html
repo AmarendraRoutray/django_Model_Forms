@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <th>Topic Name</th>
+          </thead>
+          {% for to in topics %}
+          <tbody>
+            <td>{{to.topic_name}}</td>
+          </tbody>
+          {% endfor %}
+        </table>
+      </div>
+</body>
+</html>
